@@ -1721,6 +1721,8 @@ GameObject:
   - component: {fileID: 6662368580679620425}
   - component: {fileID: 6662368579223350186}
   - component: {fileID: 1100285520890414725}
+  - component: {fileID: 6838647797654449878}
+  - component: {fileID: 3121209792005644892}
   m_Layer: 0
   m_Name: Saint Bernard
   m_TagString: Untagged
@@ -1824,6 +1826,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa084960ccc29974cb9e02e6e0855deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6838647797654449878
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662368580689022585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07505791, y: 0.20622429, z: 0.25956}
+  m_Center: {x: 0, y: 0.09815403, z: 0.03217628}
+--- !u!114 &3121209792005644892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662368580689022585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3bbe8fdae0abf4e839532150160a12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6662368580689023061

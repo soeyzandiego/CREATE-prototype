@@ -138,6 +138,8 @@ GameObject:
   - component: {fileID: 6207432511386380370}
   - component: {fileID: 6207432512375943525}
   - component: {fileID: 4633192057459732608}
+  - component: {fileID: 1982073042907382111}
+  - component: {fileID: 7158746934286597728}
   m_Layer: 0
   m_Name: Border Collie
   m_TagString: Untagged
@@ -241,6 +243,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa084960ccc29974cb9e02e6e0855deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1982073042907382111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207432511395800554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07499025, y: 0.20748381, z: 0.21076371}
+  m_Center: {x: -0, y: 0.0953405, z: 0}
+--- !u!114 &7158746934286597728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207432511395800554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3bbe8fdae0abf4e839532150160a12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6207432511395800578
