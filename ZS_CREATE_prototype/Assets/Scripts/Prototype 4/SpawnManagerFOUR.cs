@@ -5,12 +5,28 @@ using UnityEngine;
 public class SpawnManagerFOUR : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
+    [SerializeField] GameObject powerupPrefab;
     [SerializeField] float spawnRange = 9f;
+
+    int enemyCount;
+    int waveNumber = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(enemyPrefab, GenerateSpawnPos(), enemyPrefab.transform.rotation);
+        SpawnWave(waveNumber);
+    }
+
+    private void Update()
+    {
+        enemyCount = FindObjectsOfType<Enemy>().Length;
+
+        if (enemyCount == 0) 
+        { 
+            waveNumber++;
+            SpawnWave(waveNumber);
+            Instantiate(powerupPrefab, GenerateSpawnPos(), powerupPrefab.transform.rotation);
+        }
     }
 
     private Vector3 GenerateSpawnPos()
@@ -21,10 +37,12 @@ public class SpawnManagerFOUR : MonoBehaviour
         return randomPos;
     }
 
-    // Update is called once per frame
-    void Update()
+    void SpawnWave(int amount)
     {
-        
+        for (int i = 0; i < amount; i++)
+        {
+            Instantiate(enemyPrefab, GenerateSpawnPos(), enemyPrefab.transform.rotation);
+        }
     }
 
     private void OnDrawGizmosSelected()
